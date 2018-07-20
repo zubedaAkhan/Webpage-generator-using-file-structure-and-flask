@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Success</title>
+    <link href="https://bootswatch.com/4/cyborg/bootstrap.min.css" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    body{
+       font-family: 'Roboto';
+       font-size:30px;
+    }
+    </style>
+</head>
+
+<body class= "bg-dark">
+    <div class="jumbotron bg-dark">
+        <h1 class="display-4 text-primary text-center font-weight-bold"><span class = "text-white text-center display-3">Hurray!!</span> <br> Files are created. <br>Your information is saved as {{company_name}}.txt</h1>
+        <br>
+        <div class="text-center font-weight-bold">
+        
+              <a href="/display/{{company_name}}" class="btn btn-success btn-lg mx-auto font-weight-bold " target="_blank">Click here to view the file</a>
+        
+        <br>
+
+        <hr class="bg-white">
+        
+        <p class="form-group text-primary font-weight-bold">Click the button to start processing into a html files</p>
+        <br>
+            <a href="/convert/{{company_name}}" class="btn btn-success btn-lg mx-auto font-weight-bold" target="_blank">Convert File</a>
+        
+    </div>
+    <br>
+    <br>
+    </div>
+</body>
+</html>

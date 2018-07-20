@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document display</title>
+    <link href="https://bootswatch.com/4/cyborg/bootstrap.min.css" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    body{
+       font-family: 'Roboto';
+       font-size:25px;
+    }
+    h1,h2,h3,h4{
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body class = "container bg-dark text-white">
+<br>
+<h3 class='text-center text-primary display-3'> Delimiter for fields is '|' <br> Delimiter for records is '###'</h3>
+
+
+{% for f in company_name%}
+
+<p>{{f.rstrip()}}</p>
+{% endfor %}
+
+    
+</body>
